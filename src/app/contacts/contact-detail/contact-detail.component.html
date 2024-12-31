@@ -1,0 +1,82 @@
+<div class="flex-1">
+    <div class="ml-36 mt-32 mb-9 flex flex-row">
+        <img [src]="contact.avatar" class="w-28 h-28 object-cover rounded-3xl" />
+        <div class="flex flex-col ml-6">
+            <span class="text-sm font-bold">{{ contact.name }}</span>
+            <span class="mb-5 font-light">{{ contact.designation }}</span>
+            <div class="flex flex-row items-center space-x-2">
+                <button class="flex items-center px-2 py-2 bg-violet-500 rounded-md justify-center text-white">
+                    <i class="ti ti-messages"></i>
+                    <span class="space-x-1">Message</span>
+                </button>
+                <button class="bg-white p-2 rounded-lg border border-gray-200">
+                    <i class="ti ti-phone"></i>
+                </button>
+                <button class="bg-white p-2 rounded-lg border border-gray-200">
+                    <i class="ti ti-cloud-up"></i>
+                </button>
+                <button class="bg-white p-2 rounded-lg border border-gray-200">
+                    <i class="ti ti-dots"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="px-10">
+        <table class="border-separate border-spacing-y-5">
+            <tr>
+                <td class="w-1/5 text-right pr-5 align-top text-gray-400">Bio</td>
+                <td>{{ contact.bio }}</td>
+            </tr>
+            <tr>
+                <td class="w-1/5 text-right pr-5 align-top text-gray-400">Email</td>
+                <td>
+                    <div class="flex items-center">
+                        <span class="flex-1">{{ contact.email }}</span>
+                        <button class="bg-gray-100 border border-gray-200 py-1 px-3 rounded-md text-xs font-normal">
+                            Primary
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="w-1/5 text-right pr-5 align-top text-gray-400">Dial</td>
+                <td>{{ contact.dial }}</td>
+            </tr>
+            <tr>
+                <td class="w-1/5 text-right pr-5 align-top text-gray-400">Meeting</td>
+                <td><a href="{{ contact.meeting }}" target="_blank">{{ contact.meeting }}</a></td>
+            </tr>
+            <tr>
+                <td class="w-1/5 text-right pr-5 align-top text-gray-400">Phone</td>
+                <td>
+                    <div class="flex items-center">
+                        <span class="flex-1">{{ contact.phone }}</span>
+                        <button class="bg-gray-100 border border-gray-200 py-1 px-3 rounded-md text-xs font-normal">
+                            Primary
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="w-1/5 text-right pr-5 align-top text-gray-400">Social</td>
+                <td class="flex flex-row space-x-1">
+                    <a target="_blank" class="bg-white p-2 rounded-lg border border-gray-400">
+                        <i class="ti ti-brand-facebook"></i>
+                    </a>
+                    <a target="_blank" class="bg-white p-2 rounded-lg border border-gray-400">
+                        <i class="ti ti-brand-twitter" size="20"></i>
+                    </a>
+                    <a target="_blank" class="bg-white p-2 rounded-lg border border-gray-400">
+                        <i class="ti ti-brand-pinterest" size="20"></i>
+                    </a>
+                    <a target="_blank" class="bg-white p-2 rounded-lg border border-gray-400">
+                        <i class="ti ti-brand-instagram" size="20"></i>
+                    </a>
+                    <a target="_blank" class="bg-white p-2 rounded-lg border border-gray-400">
+                        <i class="ti ti-brand-linkedin" size="20"></i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
